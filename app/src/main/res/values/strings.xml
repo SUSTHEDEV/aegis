@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aegis</string>
+    <string name="module_description">A Shizuku compatible layer, primarily for built-in ROM applications.</string>
+    <string name="permission_group_description">Shizuku permissions</string>
+    <string name="permission_group_label">Shizuku API</string>
+    <string name="permission_description">Allow apps to use Shizuku APIs</string>
+    <string name="permission_label">Shizuku API Access</string>
+</resources>

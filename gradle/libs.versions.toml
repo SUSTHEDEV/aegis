@@ -1,0 +1,14 @@
+[versions]
+agp = "9.3.3"
+libxposed = "101.0.0"
+material = "1.12.0"
+appcompat = "1.7.0"
+
+[libraries]
+libxposed-api = { group = "io.github.libxposed", name = "api", version.ref = "libxposed" }
+libxposed-service = { group = "io.github.libxposed", name = "service", version.ref = "libxposed" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }

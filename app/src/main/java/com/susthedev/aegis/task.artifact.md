@@ -1,0 +1,9 @@
+- [x] Implement ADB Grant/Revoke Integration & Internal Permission Database
+  - [x] Create `task.artifact.md` checklist
+  - [x] Create `PermissionDatabase.kt` mapping signature/system permissions to human-readable explanations
+  - [x] Add `getRule(pkg, perm)` helper in `AegisPolicy.kt`
+  - [x] Update `PermissionStatusHook.kt` to preserve explicit `DENIED` rules on revoke
+  - [x] Update `MainActivity.kt` switch listener to execute background `pm grant` / `pm revoke` shell commands and use `PermissionDatabase`
+  - [x] Analyze created/modified files for syntax or compiler issues
+  - [x] Run Gradle build to verify compilation (`:app:assembleDebug` SUCCESS)
+  - [x] Create `walkthrough.artifact.md` summary

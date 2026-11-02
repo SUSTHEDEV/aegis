@@ -1,0 +1,9 @@
+id=aegis
+name=Aegis
+version=v0.1.0
+versionCode=1
+author=susthedev
+description=Consented development-permission grants for system_server
+minApiVersion=101
+targetApiVersion=101
+staticScope=true

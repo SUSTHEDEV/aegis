@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+
+    <uses-feature
+        android:name="android.hardware.biometrics"
+        android:required="false" />
+
+    <permission-group
+        android:name="moe.shizuku.manager.permission-group.API"
+        android:description="@string/permission_group_description"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/permission_group_label" />
+
+    <permission
+        android:name="moe.shizuku.manager.permission.MANAGER"
+        android:protectionLevel="signature" />
+
+    <permission
+        android:name="moe.shizuku.manager.permission.API_V23"
+        android:description="@string/permission_description"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/permission_label"
+        android:permissionGroup="moe.shizuku.manager.permission-group.API"
+        android:protectionLevel="dangerous" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:description="@string/module_description"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+        </activity>
+        <activity-alias
+            android:name=".LauncherAlias"
+            android:exported="true"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+    </application>
+
+</manifest>
